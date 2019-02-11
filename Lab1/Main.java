@@ -1,10 +1,10 @@
-package com.company;
+package ua.lviv.iot;
 
 public class Main {
 
     public static void main(String[] args) {
-	System.out.println("\t\tClass Bank\n");
-	Bank FamilyBank = new Bank(
+        System.out.println("\t\tClass Bank\n");
+        Bank FamilyBank = new Bank(
                 "Family Bank",
                 7600,
                 10300,

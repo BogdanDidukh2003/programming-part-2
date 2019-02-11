@@ -1,4 +1,4 @@
-package com.company;
+package ua.lviv.iot;
 
 public class Bank {
     private String name;
@@ -95,30 +95,56 @@ public class Bank {
     public void setName(String name) {
         this.name = name;
     }
+
     public void setNumberOfClients(int numberOfClients) {
         this.numberOfClients = numberOfClients;
     }
+
     public void setNumberOfCredits(int numberOfCredits) {
         this.numberOfCredits = numberOfCredits;
     }
+
     public void setNumberOfEmployees(int numberOfEmployees) {
         this.numberOfEmployees = numberOfEmployees;
     }
+
     public void setRating(float rating) {
         this.rating = rating;
     }
+
     public void setAddress(String address) {
         this.address = address;
     }
+
     public void setCashAmount(int cashAmount) {
         this.cashAmount = cashAmount;
     }
 
-    public String getName() {return name;}
-    public int getNumberOfClients() {return numberOfClients;}
-    public int getNumberOfCredits() {return numberOfCredits;}
-    public int getNumberOfEmployees() {return numberOfEmployees;}
-    public float getRating() {return rating;}
-    public String getAddress() {return address;}
-    public int getCashAmount() {return cashAmount;}
+    public String getName() {
+        return name;
+    }
+
+    public int getNumberOfClients() {
+        return numberOfClients;
+    }
+
+    public int getNumberOfCredits() {
+        return numberOfCredits;
+    }
+
+    public int getNumberOfEmployees() {
+        return numberOfEmployees;
+    }
+
+    public float getRating() {
+        return rating;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public int getCashAmount() {
+        return cashAmount;
+    }
 }
