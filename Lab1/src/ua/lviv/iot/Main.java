@@ -28,7 +28,7 @@ public class Main {
         System.out.println(redBank.toString() + "\n");
         System.out.println(ironBank.toString() + "\n");
 
-        redBank.printStaticBankCount();
+        Bank.printStaticBankCount();
         ironBank.printBankCount();
     }
 }
