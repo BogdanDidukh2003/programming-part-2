@@ -5,52 +5,21 @@ public class Bank {
     private int numberOfClients;
     private int numberOfCredits;
     private int numberOfEmployees;
-    private float rating; // from 0 to 10
+    // rating from 0 to 10
+    private float rating;
     private static int bankCount = 0;
     protected String address;
     protected int cashAmount;
 
-    public void resetValues(
-            String name,
-            int numberOfClients,
-            int numbersOfCredits,
-            int numberOfEmployees,
-            float rating,
-            String address,
-            int cashAmount
-    ) {
-        this.name = name;
-        this.numberOfClients = numberOfClients;
-        this.numberOfCredits = numbersOfCredits;
-        this.numberOfEmployees = numberOfEmployees;
-        this.rating = rating;
-        this.address = address;
-        this.cashAmount = cashAmount;
-    }
-
-    public void printBankCount() {
-        System.out.println("Bank Count: " + bankCount);
-    }
-
-    public static void printStaticBankCount() {
-        System.out.println("Bank Count: " + bankCount);
-    }
-
-    public String toString() {
-        return "Bank name is " + this.name + "\n"
-                + "Address: " + this.address + "\n"
-                + "Rating: " + this.rating;
-    }
-
     Bank() {
         this(
-                "Iron Bank",
-                12000,
-                32090,
-                220,
-                9.1f,
-                "Central st, 77",
-                540000
+                "",
+                0,
+                0,
+                0,
+                0f,
+                "",
+                0
         );
     }
 
@@ -90,6 +59,44 @@ public class Bank {
                 cashAmount
         );
         bankCount++;
+    }
+
+    public void resetValues(
+            String name,
+            int numberOfClients,
+            int numbersOfCredits,
+            int numberOfEmployees,
+            float rating,
+            String address,
+            int cashAmount
+    ) {
+        this.name = name;
+        this.numberOfClients = numberOfClients;
+        this.numberOfCredits = numbersOfCredits;
+        this.numberOfEmployees = numberOfEmployees;
+        this.rating = rating;
+        this.address = address;
+        this.cashAmount = cashAmount;
+    }
+
+    public void printBankCount() {
+        System.out.println("Bank Count: " + bankCount);
+    }
+
+    public static void printStaticBankCount() {
+        System.out.println("Bank Count: " + bankCount);
+    }
+
+    public String toString() {
+        return "Bank{" +
+                "name='" + name + '\'' +
+                ", numberOfClients=" + numberOfClients +
+                ", numberOfCredits=" + numberOfCredits +
+                ", numberOfEmployees=" + numberOfEmployees +
+                ", rating=" + rating +
+                ", address='" + address + '\'' +
+                ", cashAmount=" + cashAmount +
+                '}';
     }
 
     public void setName(String name) {

@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("\t\tClass Bank\n");
-        Bank FamilyBank = new Bank(
+        Bank familyBank = new Bank(
                 "Family Bank",
                 7600,
                 10300,
@@ -13,22 +13,22 @@ public class Main {
                 "St.Stephan st, 26",
                 200000
         );
-        Bank RedBank = new Bank(
+        Bank redBank = new Bank(
                 "Red Bank",
                 11000,
                 20500,
                 46
         );
-        Bank IronBank = new Bank();
+        Bank ironBank = new Bank();
 
-        RedBank.setAddress("Liberty st, 46a");
-        RedBank.setRating(8.9f);
+        redBank.setAddress("Liberty st, 46a");
+        redBank.setRating(8.9f);
 
-        System.out.println(FamilyBank.toString() + "\n");
-        System.out.println(RedBank.toString() + "\n");
-        System.out.println(IronBank.toString() + "\n");
+        System.out.println(familyBank.toString() + "\n");
+        System.out.println(redBank.toString() + "\n");
+        System.out.println(ironBank.toString() + "\n");
 
-        RedBank.printStaticBankCount();
-        IronBank.printBankCount();
+        redBank.printStaticBankCount();
+        ironBank.printBankCount();
     }
 }
